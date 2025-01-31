@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html css>
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,43 +12,100 @@
 
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-  <!-- tem que ser declarado no ele mento do css e no html voce emporta o link-->
+  <!-- tem que ser declarado no elemento do css e no html voce importa o link-->
 
   <title>Documento</title>
+  <style>
+    body{
+    flex-direction: column;
+  
+    /*Font importada do fonts.google.com eu não inventei esse codigo,
+    é só copiar do google fonts*/
+  
+    font-family: 'Poppins', sans-serif;
+   background-image: linear-gradient(
+     rgb(55, 0, 255) 20%,
+     rgb(179, 0, 238)
+   );
+   h1{
+    color: black;
+   }
+  }
+  li{
+    list-style: none;
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 30px;
+    width: 150px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+  }
+  li:hover, a:hover{
+    background-image: linear-gradient(
+      rgb(55, 0, 255) 20%,
+      rgb(179, 0, 238)
+    );
+    color: white;
+  }
+  ul{
+    list-style: none;
+   color: rgb(0, 0, 0);
+  
+  }
+  a{
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+  }
+  
+  img{
+    max-width: 150px;
+    border-radius: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+    width: 300px;
+  }
+  @keyframes float { 
+  0%{
+    transform: translateY(20px);
+  
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+  }
+  </style>
 </head>
 <body>
-  
-
- <div>
    <center>
-   <img src="https://thumbs.dreamstime.com/b/bandeira-redonda-do-%C3%ADcone-de-brasil-94367047.jpg" alt="Foto de Perfil">
+   <img src="https://i.pinimg.com/originals/1d/4d/69/1d4d69c694c8ba1034c0e9552f457ecf.jpg" alt="Foto de Perfil">
+   <!--imagem para fins didaticos, link pego no google -->
  <center>
   <h1>Juninho</h1>
   <p>@Juninho_Scar</p>
   </div>
   <ul>
-    <center>
-      
-<li>
+<center>   
+  <li>
   <a href="https://youtube.com" target= "_blank">YouTube</a>
- 
-</li>
+  </li>
 <li>
-  <a href="https://instagram.com"target= "_blank">Instagram</a>
+<a href="https://instagram.com"target= "_blank">Instagram</a>
 </li>
-<li>
-  <a href="https://www.facebook.com/joseedmarc.gouveia"target= "_blank">Facebook</a>
-</li>
+  <li>
+  <a href="https://facebook.com"target= "_blank">Facebook</a>
+  </li>
 <li>
 <a href="https://twitter.com"target= "_blank">Twitter</a>
 </li>
 <li>
   <a href="https://github.com"target= "_blank">GitHub</a>
 </li>
-  </ul>
-  <center>
-  <footer>Feito com <a href="https://github.com"target= "_blank">dedicação🤓</footer>
-  </center>
-  </body>
+</ul>
+<footer>Feito com dedicação🤓</footer>
+</body>
 </html>
-
