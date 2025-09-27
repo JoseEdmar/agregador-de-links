@@ -1,17 +1,11 @@
 body{
+    text-align: center;
     flex-direction: column;
-  
     /*Font importada do fonts.google.com eu não inventei esse codigo,
     é só copiar do google fonts*/
   
     font-family: 'Poppins', sans-serif;
-   background-image: linear-gradient(
-     rgb(55, 0, 255) 20%,
-     rgb(179, 0, 238)
-   );
-   h1{
-    color: black;
-   }
+    background-image: linear-gradient(rgb(55, 0, 255) 20%,rgb(179, 0, 238));
   }
   li{
     list-style: none;
@@ -24,16 +18,11 @@ body{
     background-color: rgb(255, 255, 255);
   }
   li:hover, a:hover{
-    background-image: linear-gradient(
-      rgb(55, 0, 255) 20%,
-      rgb(179, 0, 238)
-    );
-    color: white;
+    color: rgb(0, 101, 252);
   }
   ul{
     list-style: none;
-   color: rgb(0, 0, 0);
-  
+   color: rgb(0, 0, 0);  
   }
   a{
     text-decoration: none;
